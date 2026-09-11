@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مسار | MASAR</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <!-- رأس الموقع وشريط التنقل الرئيسي -->
+    <header class="site-header">
+        <nav class="navbar">
+            <!-- هوية الموقع -->
+            <a class="navbar-brand" href="index.html">
+                <img class="navbar-logo" src="images/logo.png" alt="شعار مسار">
+                <span class="navbar-title">MASAR | مسار</span>
+            </a>
+
+            <!-- روابط التنقل -->
+            <ul class="navbar-menu">
+                <li class="navbar-item">
+                    <a class="navbar-link" href="index.html">الرئيسية</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="fields.html">المجالات</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="courses.html">الدورات</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="bootcamps.html">المعسكرات</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="discover.html">اكتشف مسارك</a>
+                </li>
+            </ul>
+
+            <!-- زر الوضع الداكن -->
+            <button class="navbar-theme-toggle" type="button" aria-label="تفعيل الوضع الداكن">
+                <i class="bi bi-moon" aria-hidden="true"></i>
+            </button>
+
+            <!-- زر قائمة التنقل للجوال -->
+            <button class="navbar-menu-toggle" type="button" aria-label="فتح قائمة التنقل" aria-expanded="false">
+                <i class="bi bi-list" aria-hidden="true"></i>
+            </button>
+
+            <!-- زر الدعوة إلى الإجراء -->
+            <div class="navbar-start-actions">
+                <a class="navbar-cta" href="#" role="button" aria-expanded="false" aria-controls="quick-start-menu">ابدأ الآن</a>
+                <div class="quick-start-menu" id="quick-start-menu" hidden>
+                    <h2>وش حاب تبدأ فيه؟</h2>
+                    <a href="courses.html"><i class="bi bi-book"></i><span><strong>استكشف الدورات</strong><small>تصفح الدورات حسب المجال</small></span></a>
+                    <a href="bootcamps.html"><i class="bi bi-rocket"></i><span><strong>استكشف المعسكرات</strong><small>اكتشف برامج تدريبية مكثفة</small></span></a>
+                    <a href="discover.html"><i class="bi bi-compass"></i><span><strong>اكتشف مسارك</strong><small>جاوب على 10 أسئلة واعرف المجال الأقرب لك</small></span></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">مسارك للتعلّم يبدأ من هنا.</h1>
+                <p class="hero-description">اكتشف الدورات والمعسكرات المناسبة لمجالك واهتماماتك، واجمع فرصك التعليمية في مكان واحد.</p>
+                <div class="hero-actions">
+                    <a class="hero-primary" href="#">اكتشف الفرص</a>
+                    <a class="hero-secondary" href="discover.html">اكتشف مسارك</a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img src="images/hero.png" alt="اكتشف مسارك التعليمي مع مسار">
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="features-container">
+            <div class="features-header">
+                <p class="features-label">ليش مسار؟</p>
+                <h2 class="features-title">خلّ اختيار فرصتك الجاية أسهل</h2>
+                <p class="features-description">بدل ما تضيع بين عشرات المنصات، مسار يجمع لك الفرص التعليمية المناسبة ويخلّي وصولك لها أسرع وأوضح.</p>
+            </div>
+
+            <div class="features-grid">
+                <article class="feature-card">
+                    <div class="feature-card-top">
+                        <span class="feature-number">01</span>
+                        <div class="feature-icon">
+                            <i class="bi bi-compass"></i>
+                        </div>
+                    </div>
+                    <h3 class="feature-title">اكتشف حسب مجالك</h3>
+                    <p class="feature-text">اختر المجال اللي يهمك، واكتشف دورات ومعسكرات وفرص تعليمية تناسب اهتماماتك.</p>
+                    <span class="feature-arrow"><i class="bi bi-arrow-up-left"></i></span>
+                </article>
+
+                <article class="feature-card feature-card-featured">
+                    <div class="feature-card-top">
+                        <span class="feature-number">02</span>
+                        <div class="feature-icon">
+                            <i class="bi bi-sliders"></i>
+                        </div>
+                    </div>
+                    <h3 class="feature-title">فلتر حسب احتياجك</h3>
+                    <p class="feature-text">حدد المستوى، نوع الفرصة، طريقة الحضور، والسعر عشان توصل للخيارات الأنسب لك.</p>
+                    <span class="feature-arrow"><i class="bi bi-arrow-up-left"></i></span>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-card-top">
+                        <span class="feature-number">03</span>
+                        <div class="feature-icon">
+                            <i class="bi bi-collection"></i>
+                        </div>
+                    </div>
+                    <h3 class="feature-title">فرص متعددة في مكان واحد</h3>
+                    <p class="feature-text">استعرض دورات ومعسكرات من منصات مختلفة بدون الحاجة للتنقل والبحث في كل منصة بشكل منفصل.</p>
+                    <span class="feature-arrow"><i class="bi bi-arrow-up-left"></i></span>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-section" aria-labelledby="opportunities-title">
+        <div class="section-heading">
+            <p class="eyebrow">فرص تعليمية مختارة</p>
+            <h2 id="opportunities-title">اكتشف فرصتك التعليمية القادمة</h2>
+            <p class="intro">تعرّف على فرص مناسبة لك، وانتقل مباشرة إلى المنصة الأصلية لمعرفة التفاصيل والتقديم.</p>
+        </div>
+
+        <div class="project-grid">
+            <article class="project-card">
+                <div class="project-card-header">
+                    <span class="project-type">دورة</span>
+                </div>
+                <h3 class="project-title">UX/UI</h3>
+                <p class="project-platform">منصة سطر <span>مقدمة عبر منصة خارجية</span></p>
+                <div class="tags">
+                    <span>مبتدئ</span>
+                    <span>أونلاين</span>
+                    <span>36 فيديو تعليمي</span>
+                    <span>3 اختبارات</span>
+                </div>
+                <a class="button button-primary" href="https://satr.tuwaiq.edu.sa/course/ZlDLPAAOOn/view" target="_blank" rel="noopener noreferrer">عرض الفرصة <i class="bi bi-box-arrow-up-left"></i></a>
+            </article>
+
+            <article class="project-card project-card-featured">
+                <span class="featured-badge">فرصة مميزة</span>
+                <div class="project-card-header">
+                    <span class="project-type">معسكر</span>
+                </div>
+                <h3 class="project-title">تطوير مواقع الويب باستخدام Java</h3>
+                <p class="project-platform">أكاديمية طويق <span>مقدمة عبر منصة خارجية</span></p>
+                <div class="tags">
+                    <span>تطوير الويب</span>
+                    <span>Java</span>
+                    <span>Spring Boot</span>
+                    <span>14 أسبوع</span>
+                </div>
+                <a class="button button-primary" href="https://tuwaiq.edu.sa/bootcamp/YkO2q5R1/view" target="_blank" rel="noopener noreferrer">عرض الفرصة <i class="bi bi-box-arrow-up-left"></i></a>
+            </article>
+
+            <article class="project-card">
+                <div class="project-card-header">
+                    <span class="project-type">معسكر</span>
+                </div>
+                <h3 class="project-title">أكاديمية مطوري آبل</h3>
+                <p class="project-platform">أكاديمية طويق <span>مقدمة عبر منصة خارجية</span></p>
+                <div class="tags">
+                    <span>تطوير تطبيقات iOS</span>
+                    <span>SwiftUI</span>
+                    <span>UX/UI</span>
+                    <span>41 أسبوع</span>
+                </div>
+                <a class="button button-primary" href="https://tuwaiq.edu.sa/bootcamp/7G5qRDL8/view" target="_blank" rel="noopener noreferrer">عرض الفرصة <i class="bi bi-box-arrow-up-left"></i></a>
+            </article>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="faq-container">
+            <div class="faq-content">
+                <div class="faq-header">
+                    <p class="faq-label">عندك سؤال؟</p>
+                    <h2 class="faq-title">الأسئلة الشائعة</h2>
+                    <p class="faq-description">كل اللي تحتاج تعرفه عن مسار وطريقة اكتشاف الفرص التعليمية.</p>
+                </div>
+
+                <div class="faq-search">
+                    <i class="bi bi-search"></i>
+                    <input type="search" placeholder="ابحث عن سؤالك...">
+                </div>
+
+                <div class="faq-list">
+                    <article class="faq-item">
+                        <div class="faq-question-row">
+                            <h3 class="faq-question">وش هو مسار؟</h3>
+                            <i class="bi bi-chevron-down faq-icon"></i>
+                        </div>
+                        <p class="faq-answer">مسار يساعدك تكتشف الدورات والمعسكرات والفرص التعليمية المناسبة لمجالك واهتماماتك من منصات مختلفة في مكان واحد.</p>
+                    </article>
+
+                    <article class="faq-item">
+                        <div class="faq-question-row">
+                            <h3 class="faq-question">هل الدورات والمعسكرات مقدمة من مسار؟</h3>
+                            <i class="bi bi-chevron-down faq-icon"></i>
+                        </div>
+                        <p class="faq-answer">لا، مسار يساعدك في اكتشاف الفرص فقط، وعند اختيار أي فرصة يتم توجيهك إلى المنصة الأصلية المقدمة لها للاطلاع على التفاصيل والتسجيل.</p>
+                    </article>
+
+                    <article class="faq-item">
+                        <div class="faq-question-row">
+                            <h3 class="faq-question">كيف أعرف المسار المناسب لي؟</h3>
+                            <i class="bi bi-chevron-down faq-icon"></i>
+                        </div>
+                        <p class="faq-answer">تقدر تستخدم اختبار اكتشف مسارك، ومن خلال إجاباتك نساعدك في التعرف على المجالات الأقرب لاهتماماتك.</p>
+                    </article>
+
+                    <article class="faq-item">
+                        <div class="faq-question-row">
+                            <h3 class="faq-question">هل أقدر أبحث عن فرص في مجال محدد؟</h3>
+                            <i class="bi bi-chevron-down faq-icon"></i>
+                        </div>
+                        <p class="faq-answer">نعم، تقدر تستكشف المجالات المختلفة وتعرض الدورات والمعسكرات والفرص المرتبطة بالمجال اللي يهمك.</p>
+                    </article>
+
+                    <article class="faq-item">
+                        <div class="faq-question-row">
+                            <h3 class="faq-question">هل جميع الفرص مجانية؟</h3>
+                            <i class="bi bi-chevron-down faq-icon"></i>
+                        </div>
+                        <p class="faq-answer">لا، تختلف الفرص حسب المنصة المقدمة لها، وقد تجد فرصًا مجانية وأخرى مدفوعة.</p>
+                    </article>
+
+                    <article class="faq-item">
+                        <div class="faq-question-row">
+                            <h3 class="faq-question">كيف أسجل في فرصة أعجبتني؟</h3>
+                            <i class="bi bi-chevron-down faq-icon"></i>
+                        </div>
+                        <p class="faq-answer">اضغط على زر «عرض الفرصة»، وراح تنتقل مباشرة إلى الصفحة الأصلية للفرصة لمعرفة التفاصيل وإكمال التسجيل.</p>
+                    </article>
+                </div>
+            </div>
+
+            <div class="faq-illustration">
+                <span class="faq-decoration faq-decoration-one"></span>
+                <span class="faq-decoration faq-decoration-two"></span>
+                <img src="images/faq-illustration.png" alt="اكتشاف المسارات والفرص التعليمية في مسار">
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="cta-container">
+            <div class="cta-content">
+                <p class="cta-label">خطوتك الجاية تبدأ هنا</p>
+                <h2 class="cta-title">مو عارف من وين تبدأ؟</h2>
+                <h3 class="cta-highlight">اكتشف المسار المناسب لك</h3>
+                <p class="cta-description">جاوب على أسئلة بسيطة، وخذ نقطة بداية تساعدك تكتشف المجالات والفرص التعليمية الأقرب لاهتماماتك.</p>
+                <div class="cta-actions">
+                    <a class="cta-primary" href="#discover-path">ابدأ اختبار المسار <i class="bi bi-arrow-left"></i></a>
+                    <a class="cta-secondary" href="#fields">استكشف المجالات</a>
+                </div>
+            </div>
+
+            <div class="cta-visual">
+                <img src="images/cta-path.png" alt="مسار تعليمي تقني" class="cta-image">
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <section class="footer-cta">
+            <div class="footer-cta-content">
+                <h2 class="footer-cta-title">ابدأ رحلتك مع مسار</h2>
+                <p class="footer-cta-description">اكتشف المجال المناسب لك وابدأ في استكشاف الفرص التعليمية من مكان واحد.</p>
+            </div>
+            <a class="footer-cta-button" href="discover.html">اكتشف مسارك <i class="bi bi-arrow-left"></i></a>
+        </section>
+
+        <div class="footer-main">
+            <div class="footer-brand">
+                <a class="footer-logo" href="#">
+                    <img src="images/logo.png" alt="شعار مسار">
+                    <span>مسار</span>
+                </a>
+                <p>منصة تساعدك تكتشف الدورات والمعسكرات والفرص التعليمية المناسبة لمجالك واهتماماتك.</p>
+            </div>
+
+            <nav class="footer-links" aria-label="روابط سريعة">
+                <h2>روابط سريعة</h2>
+                <a href="#">الرئيسية</a>
+                <a href="#fields">المجالات</a>
+                <a href="#opportunities-title">الدورات</a>
+                <a href="bootcamps.html">المعسكرات</a>
+                <a href="discover.html">اكتشف مسارك</a>
+                <a href="#faq">الأسئلة الشائعة</a>
+            </nav>
+
+            <div class="footer-social">
+                <h2>تابعنا</h2>
+                <div class="footer-social-links">
+                    <a href="#" aria-label="إكس"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" aria-label="إنستغرام"><i class="bi bi-instagram"></i></a>
+                    <a href="#" aria-label="لينكدإن"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 مسار. جميع الحقوق محفوظة.</p>
+            <span>صُمم لتسهيل الوصول للفرص التعليمية.</span>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

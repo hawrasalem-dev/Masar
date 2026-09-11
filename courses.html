@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الدورات | مسار</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar">
+            <a class="navbar-brand" href="index.html">
+                <img class="navbar-logo" src="images/logo.png" alt="شعار مسار">
+                <span class="navbar-title">MASAR | مسار</span>
+            </a>
+
+            <ul class="navbar-menu">
+                <li class="navbar-item"><a class="navbar-link" href="index.html">الرئيسية</a></li>
+                <li class="navbar-item"><a class="navbar-link" href="fields.html">المجالات</a></li>
+                <li class="navbar-item"><a class="navbar-link" href="courses.html">الدورات</a></li>
+                <li class="navbar-item"><a class="navbar-link" href="bootcamps.html">المعسكرات</a></li>
+                <li class="navbar-item"><a class="navbar-link" href="discover.html">اكتشف مسارك</a></li>
+            </ul>
+
+            <button class="navbar-theme-toggle" type="button" aria-label="تفعيل الوضع الداكن">
+                <i class="bi bi-moon" aria-hidden="true"></i>
+            </button>
+
+            <button class="navbar-menu-toggle" type="button" aria-label="فتح قائمة التنقل" aria-expanded="false">
+                <i class="bi bi-list" aria-hidden="true"></i>
+            </button>
+
+            <div class="navbar-start-actions">
+                <a class="navbar-cta" href="#" role="button" aria-expanded="false" aria-controls="quick-start-menu">ابدأ الآن</a>
+                <div class="quick-start-menu" id="quick-start-menu" hidden>
+                    <h2>وش حاب تبدأ فيه؟</h2>
+                    <a href="courses.html"><i class="bi bi-book"></i><span><strong>استكشف الدورات</strong><small>تصفح الدورات حسب المجال</small></span></a>
+                    <a href="bootcamps.html"><i class="bi bi-rocket"></i><span><strong>استكشف المعسكرات</strong><small>اكتشف برامج تدريبية مكثفة</small></span></a>
+                    <a href="discover.html"><i class="bi bi-compass"></i><span><strong>اكتشف مسارك</strong><small>جاوب على 10 أسئلة واعرف المجال الأقرب لك</small></span></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="courses-page">
+        <section class="courses-hero" aria-labelledby="courses-hero-title">
+            <div class="courses-hero-content">
+                <p class="courses-hero-badge"><i class="bi bi-stars"></i> اكتشف • تعلّم • تطوّر</p>
+                <h1 id="courses-hero-title">دورتك الجاية تبدأ من هنا</h1>
+                <p class="courses-hero-description">حدد المجال اللي يهمك، واستكشف دورات من منصات تعليمية مختلفة في مكان واحد.</p>
+                <p class="courses-hero-support">فرص تعليمية متنوعة <span>•</span> مجالات متعددة <span>•</span> وصول مباشر للمنصة</p>
+                <a class="courses-hero-button" href="#courses-discovery">استكشف الدورات <i class="bi bi-arrow-down"></i></a>
+            </div>
+
+            <div class="courses-hero-visual" aria-label="مجالات تعليمية متنوعة">
+                <div class="courses-visual-orbit courses-visual-orbit-one"></div>
+                <div class="courses-visual-orbit courses-visual-orbit-two"></div>
+                <div class="courses-glass-card courses-glass-card-code"><i class="bi bi-code-slash"></i><span>تطوير الويب</span></div>
+                <div class="courses-glass-card courses-glass-card-ai"><i class="bi bi-cpu"></i><span>ذكاء اصطناعي</span></div>
+                <div class="courses-glass-card courses-glass-card-cyber"><i class="bi bi-shield-lock"></i><span>أمن سيبراني</span></div>
+                <div class="courses-glass-card courses-glass-card-data"><i class="bi bi-bar-chart"></i><span>علم البيانات</span></div>
+                <div class="courses-glass-card courses-glass-card-design"><i class="bi bi-palette"></i><span>UI/UX</span></div>
+                <div class="courses-glass-card courses-glass-card-mobile"><i class="bi bi-phone"></i><span>تطبيقات الجوال</span></div>
+                <div class="courses-visual-core"><i class="bi bi-mortarboard"></i><span>مسار التعلّم</span></div>
+            </div>
+        </section>
+
+        <section class="courses-discovery" id="courses-discovery" aria-labelledby="courses-title">
+            <div class="courses-section-heading">
+                <p class="courses-eyebrow">دليل تعليمي متجدد</p>
+                <h2 id="courses-title">استكشف الدورات</h2>
+                <p>اختر مجالك، وابحث عن الدورة المناسبة لك.</p>
+            </div>
+
+            <div class="courses-controls">
+                <div class="courses-filters" role="group" aria-label="تصفية الدورات حسب المجال">
+                    <button class="course-filter active" type="button" data-category="all">الكل</button>
+                    <button class="course-filter" type="button" data-category="web">البرمجة وتطوير الويب</button>
+                    <button class="course-filter" type="button" data-category="ai">الذكاء الاصطناعي</button>
+                    <button class="course-filter" type="button" data-category="cyber">الأمن السيبراني</button>
+                    <button class="course-filter" type="button" data-category="data">علم البيانات</button>
+                    <button class="course-filter" type="button" data-category="design">تصميم UI/UX</button>
+                    <button class="course-filter" type="button" data-category="mobile">تطوير تطبيقات الجوال</button>
+                </div>
+
+                <label class="courses-search">
+                    <i class="bi bi-search" aria-hidden="true"></i>
+                    <span class="visually-hidden">البحث عن دورة</span>
+                    <input id="course-search" type="search" placeholder="ابحث عن دورة أو منصة...">
+                </label>
+            </div>
+
+            <p class="courses-result-count" id="courses-result-count" aria-live="polite"></p>
+
+            <div class="courses-grid" id="courses-grid" aria-live="polite">
+                <article class="course-card" data-category="web">
+                    <div class="course-provider"><div class="course-provider-logo"><span>سطر</span></div><span class="course-provider-name">منصة سطر</span></div>
+                    <span class="course-category">البرمجة وتطوير الويب</span>
+                    <h3>مقدمة في HTML</h3>
+                    <div class="course-meta"><span>مبتدئ</span></div>
+                    <a class="course-card-button" href="https://satr.tuwaiq.edu.sa/course/12252016-2825-41ef-bc27-ad7338e8ca94/view" target="_blank" rel="noopener noreferrer">عرض الدورة <i class="bi bi-box-arrow-up-left"></i></a>
+                </article>
+
+                <article class="course-card" data-category="web">
+                    <div class="course-provider"><div class="course-provider-logo"><span>سطر</span></div><span class="course-provider-name">منصة سطر</span></div>
+                    <span class="course-category">البرمجة وتطوير الويب</span>
+                    <h3>مقدمة في CSS</h3>
+                    <div class="course-meta"><span>مبتدئ</span></div>
+                    <a class="course-card-button" href="https://satr.tuwaiq.edu.sa/course/hNUwyBUKmF/view" target="_blank" rel="noopener noreferrer">عرض الدورة <i class="bi bi-box-arrow-up-left"></i></a>
+                </article>
+
+                <article class="course-card" data-category="web">
+                    <div class="course-provider"><div class="course-provider-logo"><span>سطر</span></div><span class="course-provider-name">منصة سطر</span></div>
+                    <span class="course-category">البرمجة وتطوير الويب</span>
+                    <h3>JavaScript 101</h3>
+                    <div class="course-meta"><span>مبتدئ</span></div>
+                    <a class="course-card-button" href="https://satr.tuwaiq.edu.sa/course/063df133-5593-44b9-8d87-a63f2b150fab/view" target="_blank" rel="noopener noreferrer">عرض الدورة <i class="bi bi-box-arrow-up-left"></i></a>
+                </article>
+
+                <article class="course-card" data-category="web">
+                    <div class="course-provider"><div class="course-provider-logo"><span>سطر</span></div><span class="course-provider-name">منصة سطر</span></div>
+                    <span class="course-category">البرمجة وتطوير الويب</span>
+                    <h3>مقدمة في DOM</h3>
+                    <div class="course-meta"><span>مبتدئ</span></div>
+                    <a class="course-card-button" href="https://satr.tuwaiq.edu.sa/course/565d5c6d-5549-419e-8693-be22c47928d5/view" target="_blank" rel="noopener noreferrer">عرض الدورة <i class="bi bi-box-arrow-up-left"></i></a>
+                </article>
+
+                <article class="course-card" data-category="web">
+                    <div class="course-provider"><div class="course-provider-logo"><span>سطر</span></div><span class="course-provider-name">منصة سطر</span></div>
+                    <span class="course-category">البرمجة وتطوير الويب</span>
+                    <h3>React101</h3>
+                    <div class="course-meta"><span>مبتدئ</span></div>
+                    <a class="course-card-button" href="https://satr.tuwaiq.edu.sa/course/b1f859d8-1b13-4781-ab8f-b32409ae5e61/view" target="_blank" rel="noopener noreferrer">عرض الدورة <i class="bi bi-box-arrow-up-left"></i></a>
+                </article>
+
+                <article class="course-card" data-category="web">
+                    <div class="course-provider"><div class="course-provider-logo"><span>سطر</span></div><span class="course-provider-name">منصة سطر</span></div>
+                    <span class="course-category">البرمجة وتطوير الويب</span>
+                    <h3>Node.js</h3>
+                    <div class="course-meta"><span>مبتدئ</span></div>
+                    <a class="course-card-button" href="https://satr.tuwaiq.edu.sa/course/VfLjxUkrpc/view" target="_blank" rel="noopener noreferrer">عرض الدورة <i class="bi bi-box-arrow-up-left"></i></a>
+                </article>
+
+                <article class="course-card" data-category="web">
+                    <div class="course-provider"><div class="course-provider-logo"><span>سطر</span></div><span class="course-provider-name">منصة سطر</span></div>
+                    <span class="course-category">البرمجة وتطوير الويب</span>
+                    <h3>Node.js MVC</h3>
+                    <div class="course-meta"><span>متوسط</span></div>
+                    <a class="course-card-button" href="https://satr.tuwaiq.edu.sa/course/cAybuqtYlL/view" target="_blank" rel="noopener noreferrer">عرض الدورة <i class="bi bi-box-arrow-up-left"></i></a>
+                </article>
+
+                <article class="course-card" data-category="web">
+                    <div class="course-provider"><div class="course-provider-logo"><span>سطر</span></div><span class="course-provider-name">منصة سطر</span></div>
+                    <span class="course-category">البرمجة وتطوير الويب</span>
+                    <h3>JavaScript 103</h3>
+                    <div class="course-meta"><span>متقدم</span></div>
+                    <a class="course-card-button" href="https://satr.tuwaiq.edu.sa/course/7fb7e800-e2cb-4901-8835-261606558453/view" target="_blank" rel="noopener noreferrer">عرض الدورة <i class="bi bi-box-arrow-up-left"></i></a>
+                </article>
+
+                <article class="course-card" data-category="web">
+                    <div class="course-provider"><div class="course-provider-logo"><span>سطر</span></div><span class="course-provider-name">منصة سطر</span></div>
+                    <span class="course-category">البرمجة وتطوير الويب</span>
+                    <h3>Lint</h3>
+                    <div class="course-meta"><span>مبتدئ</span></div>
+                    <a class="course-card-button" href="https://satr.tuwaiq.edu.sa/course/507eed09-768f-4a26-a3e8-d7c2fb4e9430/view" target="_blank" rel="noopener noreferrer">عرض الدورة <i class="bi bi-box-arrow-up-left"></i></a>
+                </article>
+
+                <article class="course-card" data-category="cyber">
+                    <div class="course-provider"><div class="course-provider-logo"><span>سطر</span></div><span class="course-provider-name">منصة سطر</span></div>
+                    <span class="course-category">الأمن السيبراني</span>
+                    <h3>مقدمة في الأمن السيبراني</h3>
+                    <div class="course-meta"><span>مبتدئ</span></div>
+                    <a class="course-card-button" href="https://satr.tuwaiq.edu.sa/course/QfybsgXiVq/view" target="_blank" rel="noopener noreferrer">عرض الدورة <i class="bi bi-box-arrow-up-left"></i></a>
+                </article>
+
+                <article class="course-card" data-category="cyber">
+                    <div class="course-provider"><div class="course-provider-logo"><span>سطر</span></div><span class="course-provider-name">منصة سطر</span></div>
+                    <span class="course-category">الأمن السيبراني</span>
+                    <h3>التهديدات والثغرات والهجمات في الأمن السيبراني</h3>
+                    <div class="course-meta"><span>مبتدئ</span></div>
+                    <a class="course-card-button" href="https://satr.tuwaiq.edu.sa/course/JwJKgGgESO/view" target="_blank" rel="noopener noreferrer">عرض الدورة <i class="bi bi-box-arrow-up-left"></i></a>
+                </article>
+
+                <article class="course-card" data-category="cyber">
+                    <div class="course-provider"><div class="course-provider-logo"><span>Google</span></div><span class="course-provider-name">Google / Coursera</span></div>
+                    <span class="course-category">الأمن السيبراني</span>
+                    <h3>Google Cybersecurity Professional Certificate</h3>
+                    <div class="course-meta"><span>Beginner</span></div>
+                    <a class="course-card-button" href="https://www.coursera.org/professional-certificates/google-cybersecurity" target="_blank" rel="noopener noreferrer">عرض الدورة <i class="bi bi-box-arrow-up-left"></i></a>
+                </article>
+
+                <article class="course-card" data-category="cyber">
+                    <div class="course-provider"><div class="course-provider-logo"><span>IBM</span></div><span class="course-provider-name">IBM SkillsBuild / FutureX</span></div>
+                    <span class="course-category">الأمن السيبراني</span>
+                    <h3>أساسيات الأمن السيبراني</h3>
+                    <a class="course-card-button" href="https://ibm.futurex.sa/courses/course-v1%3Aibm%2BIBMCS_101%2BMAY2025/about" target="_blank" rel="noopener noreferrer">عرض الدورة <i class="bi bi-box-arrow-up-left"></i></a>
+                </article>
+
+                <article class="course-card" data-category="cyber">
+                    <div class="course-provider"><div class="course-provider-logo"><span>FutureX</span></div><span class="course-provider-name">أمانة منطقة المدينة المنورة / FutureX</span></div>
+                    <span class="course-category">الأمن السيبراني</span>
+                    <h3>التوعية بأمن المعلومات</h3>
+                    <div class="course-meta"><span>مبتدئ</span></div>
+                    <a class="course-card-button" href="https://amanamd.futurex.sa/courses/course-v1%3Aamanamd%2Bamanamd001%2Bamanamd_2024/about" target="_blank" rel="noopener noreferrer">عرض الدورة <i class="bi bi-box-arrow-up-left"></i></a>
+                </article>
+
+                <article class="course-card" data-category="cyber">
+                    <div class="course-provider"><div class="course-provider-logo"><span>FutureX</span></div><span class="course-provider-name">جامعة أم القرى / FutureX</span></div>
+                    <span class="course-category">الأمن السيبراني</span>
+                    <h3>مبادئ تصميم الأمن السيبراني</h3>
+                    <a class="course-card-button" href="https://appliedtr.futurex.sa/courses/course-v1%3Aappliedtr%2BAPIS2206%2BAPIS2206_2026/about" target="_blank" rel="noopener noreferrer">عرض الدورة <i class="bi bi-box-arrow-up-left"></i></a>
+                </article>
+
+                <article class="course-card" data-category="data">
+                    <div class="course-provider"><div class="course-provider-logo"><span>سطر</span></div><span class="course-provider-name">منصة سطر</span></div>
+                    <span class="course-category">علم البيانات</span>
+                    <h3>مقدمة في تحليل البيانات</h3>
+                    <div class="course-meta"><span>مبتدئ</span></div>
+                    <a class="course-card-button" href="https://satr.tuwaiq.edu.sa/course/KTaeaTN2Po/view" target="_blank" rel="noopener noreferrer">عرض الدورة <i class="bi bi-box-arrow-up-left"></i></a>
+                </article>
+
+                <article class="course-card" data-category="data">
+                    <div class="course-provider"><div class="course-provider-logo"><span>سطر</span></div><span class="course-provider-name">منصة سطر</span></div>
+                    <span class="course-category">علم البيانات</span>
+                    <h3>تحليل ومعالجة البيانات: مكتبة Pandas</h3>
+                    <div class="course-meta"><span>مبتدئ</span></div>
+                    <a class="course-card-button" href="https://satr.tuwaiq.edu.sa/course/ahWLuLGQrQ/view" target="_blank" rel="noopener noreferrer">عرض الدورة <i class="bi bi-box-arrow-up-left"></i></a>
+                </article>
+
+                <article class="course-card" data-category="data">
+                    <div class="course-provider"><div class="course-provider-logo"><span>سطر</span></div><span class="course-provider-name">منصة سطر</span></div>
+                    <span class="course-category">علم البيانات</span>
+                    <h3>تحليل ومعالجة البيانات: مكتبة NumPy</h3>
+                    <div class="course-meta"><span>مبتدئ</span></div>
+                    <a class="course-card-button" href="https://satr.tuwaiq.edu.sa/course/qarivYaNvR/view" target="_blank" rel="noopener noreferrer">عرض الدورة <i class="bi bi-box-arrow-up-left"></i></a>
+                </article>
+
+                <article class="course-card" data-category="data">
+                    <div class="course-provider"><div class="course-provider-logo"><span>سطر</span></div><span class="course-provider-name">منصة سطر</span></div>
+                    <span class="course-category">علم البيانات</span>
+                    <h3>تحليل البيانات الاستكشافي (EDA)</h3>
+                    <div class="course-meta"><span>متوسط</span></div>
+                    <a class="course-card-button" href="https://satr.tuwaiq.edu.sa/course/hVpSbhqVZQ/view" target="_blank" rel="noopener noreferrer">عرض الدورة <i class="bi bi-box-arrow-up-left"></i></a>
+                </article>
+
+                <article class="course-card" data-category="data">
+                    <div class="course-provider"><div class="course-provider-logo"><span>سطر</span></div><span class="course-provider-name">منصة سطر</span></div>
+                    <span class="course-category">علم البيانات</span>
+                    <h3>تحليل البيانات باستخدام Tableau</h3>
+                    <div class="course-meta"><span>متوسط</span></div>
+                    <a class="course-card-button" href="https://satr.tuwaiq.edu.sa/course/BswbgmDtpk/view" target="_blank" rel="noopener noreferrer">عرض الدورة <i class="bi bi-box-arrow-up-left"></i></a>
+                </article>
+
+                <article class="course-card" data-category="ai">
+                    <div class="course-provider"><div class="course-provider-logo"><span>Google</span></div><span class="course-provider-name">Google Career Certificates / Coursera</span></div>
+                    <span class="course-category">الذكاء الاصطناعي</span>
+                    <h3>Introduction to AI</h3>
+                    <div class="course-meta"><span>Beginner</span></div>
+                    <a class="course-card-button" href="https://www.coursera.org/learn/google-introduction-to-ai" target="_blank" rel="noopener noreferrer">عرض الدورة <i class="bi bi-box-arrow-up-left"></i></a>
+                </article>
+
+                <article class="course-card" data-category="ai">
+                    <div class="course-provider"><div class="course-provider-logo"><span>EYouth</span></div><span class="course-provider-name">EYouth × IBM SkillsBuild</span></div>
+                    <span class="course-category">الذكاء الاصطناعي</span>
+                    <h3>بناء أول روبوت محادثة باستخدام IBM watsonx</h3>
+                    <p class="course-card-description">Build Your First Chatbot using IBM watsonx</p>
+                    <a class="course-card-button" href="https://landing.ibmskillsbuilding.eyouthlearning.com/" target="_blank" rel="noopener noreferrer">عرض الدورة <i class="bi bi-box-arrow-up-left"></i></a>
+                </article>
+
+                <article class="course-card" data-category="ai">
+                    <div class="course-provider"><div class="course-provider-logo"><span>EYouth</span></div><span class="course-provider-name">EYouth × IBM SkillsBuild</span></div>
+                    <span class="course-category">الذكاء الاصطناعي</span>
+                    <h3>استكشاف تحويل النص إلى كلام باستخدام IBM Watson</h3>
+                    <p class="course-card-description">Explore Text to Speech using IBM Watson</p>
+                    <a class="course-card-button" href="https://landing.ibmskillsbuilding.eyouthlearning.com/" target="_blank" rel="noopener noreferrer">عرض الدورة <i class="bi bi-box-arrow-up-left"></i></a>
+                </article>
+
+                <article class="course-card" data-category="ai">
+                    <div class="course-provider"><div class="course-provider-logo"><span>EYouth</span></div><span class="course-provider-name">EYouth × IBM SkillsBuild</span></div>
+                    <span class="course-category">الذكاء الاصطناعي</span>
+                    <h3>تلخيص البيانات باستخدام IBM Granite</h3>
+                    <p class="course-card-description">Summarizing Data using IBM Granite</p>
+                    <a class="course-card-button" href="https://landing.ibmskillsbuilding.eyouthlearning.com/" target="_blank" rel="noopener noreferrer">عرض الدورة <i class="bi bi-box-arrow-up-left"></i></a>
+                </article>
+
+                <article class="course-card" data-category="ai">
+                    <div class="course-provider"><div class="course-provider-logo"><span>EYouth</span></div><span class="course-provider-name">EYouth × IBM SkillsBuild</span></div>
+                    <span class="course-category">الذكاء الاصطناعي</span>
+                    <h3>استخدام الذكاء الاصطناعي التوليدي في تطوير البرمجيات</h3>
+                    <p class="course-card-description">Use Generative AI for Software Development using IBM watsonx</p>
+                    <a class="course-card-button" href="https://landing.ibmskillsbuilding.eyouthlearning.com/" target="_blank" rel="noopener noreferrer">عرض الدورة <i class="bi bi-box-arrow-up-left"></i></a>
+                </article>
+
+                <article class="course-card" data-category="ai">
+                    <div class="course-provider"><div class="course-provider-logo"><span>EYouth</span></div><span class="course-provider-name">EYouth × IBM SkillsBuild</span></div>
+                    <span class="course-category">الذكاء الاصطناعي</span>
+                    <h3>مقدمة إلى النماذج اللغوية الكبيرة LLMs</h3>
+                    <p class="course-card-description">Introduction to Large Language Models</p>
+                    <a class="course-card-button" href="https://landing.ibmskillsbuilding.eyouthlearning.com/" target="_blank" rel="noopener noreferrer">عرض الدورة <i class="bi bi-box-arrow-up-left"></i></a>
+                </article>
+
+                <article class="course-card" data-category="ai">
+                    <div class="course-provider"><div class="course-provider-logo"><span>EYouth</span></div><span class="course-provider-name">EYouth × IBM SkillsBuild</span></div>
+                    <span class="course-category">الذكاء الاصطناعي</span>
+                    <h3>إطلاق قوة وكلاء الذكاء الاصطناعي AI Agents</h3>
+                    <p class="course-card-description">Unleashing the Power of AI Agents</p>
+                    <a class="course-card-button" href="https://landing.ibmskillsbuilding.eyouthlearning.com/" target="_blank" rel="noopener noreferrer">عرض الدورة <i class="bi bi-box-arrow-up-left"></i></a>
+                </article>
+
+                <article class="course-card" data-category="mobile">
+                    <div class="course-provider"><div class="course-provider-logo"><span>Meta</span></div><span class="course-provider-name">Meta / Coursera</span></div>
+                    <span class="course-category">تطوير تطبيقات الجوال</span>
+                    <h3>Introduction to Mobile Development</h3>
+                    <div class="course-meta"><span>Beginner</span></div>
+                    <a class="course-card-button" href="https://www.coursera.org/learn/intro-to-mobile-development" target="_blank" rel="noopener noreferrer">عرض الدورة <i class="bi bi-box-arrow-up-left"></i></a>
+                </article>
+
+                <article class="course-card" data-category="mobile">
+                    <div class="course-provider"><div class="course-provider-logo"><span>Meta</span></div><span class="course-provider-name">Meta / Coursera</span></div>
+                    <span class="course-category">تطوير تطبيقات الجوال</span>
+                    <h3>Meta Android Developer Professional Certificate</h3>
+                    <div class="course-meta"><span>Beginner</span></div>
+                    <a class="course-card-button" href="https://www.coursera.org/professional-certificates/meta-android-developer" target="_blank" rel="noopener noreferrer">عرض الدورة <i class="bi bi-box-arrow-up-left"></i></a>
+                </article>
+
+                <article class="course-card" data-category="mobile">
+                    <div class="course-provider"><div class="course-provider-logo"><span>IBM</span></div><span class="course-provider-name">IBM Skills Network / Coursera</span></div>
+                    <span class="course-category">تطوير تطبيقات الجوال</span>
+                    <h3>IBM iOS and Android Mobile App Developer Professional Certificate</h3>
+                    <div class="course-meta"><span>Beginner</span></div>
+                    <a class="course-card-button" href="https://www.coursera.org/professional-certificates/ibm-ios-android-mobile-app-developer-pc" target="_blank" rel="noopener noreferrer">عرض الدورة <i class="bi bi-box-arrow-up-left"></i></a>
+                </article>
+
+                <!-- More verified Newtech and IBM SkillsBuild opportunities will be added here when individual official URLs are verified. -->
+            </div>
+
+            <button class="courses-show-more" id="courses-show-more" type="button">عرض المزيد</button>
+
+            <div class="courses-empty-state" id="courses-empty-state">
+                <i class="bi bi-journal-x" aria-hidden="true"></i>
+                <p>ما لقينا دورة مطابقة لبحثك حاليًا.</p>
+            </div>
+        </section>
+
+        <section class="courses-cta" aria-labelledby="courses-cta-title">
+            <div>
+                <p class="courses-cta-label">مو عارف من وين تبدأ؟</p>
+                <h2 id="courses-cta-title">اكتشف المجال اللي يناسبك أول</h2>
+                <p>استكشف المجالات وحدد اهتماماتك، وبعدها ارجع للدورات واختر فرصتك التعليمية.</p>
+            </div>
+            <a class="courses-cta-button" href="fields.html">استكشف المجالات <i class="bi bi-arrow-left"></i></a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <section class="footer-cta">
+            <div class="footer-cta-content">
+                <h2 class="footer-cta-title">ابدأ رحلتك مع مسار</h2>
+                <p class="footer-cta-description">اكتشف المجال المناسب لك وابدأ في استكشاف الفرص التعليمية من مكان واحد.</p>
+            </div>
+            <a class="footer-cta-button" href="discover.html">اكتشف مسارك <i class="bi bi-arrow-left"></i></a>
+        </section>
+
+        <div class="footer-main">
+            <div class="footer-brand">
+                <a class="footer-logo" href="index.html">
+                    <img src="images/logo.png" alt="شعار مسار">
+                    <span>مسار</span>
+                </a>
+                <p>منصة تساعدك تكتشف الدورات والمعسكرات والفرص التعليمية المناسبة لمجالك واهتماماتك.</p>
+            </div>
+
+            <nav class="footer-links" aria-label="روابط سريعة">
+                <h2>روابط سريعة</h2>
+                <a href="index.html">الرئيسية</a>
+                <a href="fields.html">المجالات</a>
+                <a href="courses.html">الدورات</a>
+                <a href="bootcamps.html">المعسكرات</a>
+                <a href="discover.html">اكتشف مسارك</a>
+                <a href="#faq">الأسئلة الشائعة</a>
+            </nav>
+
+            <div class="footer-social">
+                <h2>تابعنا</h2>
+                <div class="footer-social-links">
+                    <a href="#" aria-label="إكس"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" aria-label="إنستغرام"><i class="bi bi-instagram"></i></a>
+                    <a href="#" aria-label="لينكدإن"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 مسار. جميع الحقوق محفوظة.</p>
+            <span>صُمم لتسهيل الوصول للفرص التعليمية.</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اكتشف مسارك | مسار</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar">
+            <a class="navbar-brand" href="index.html"><img class="navbar-logo" src="images/logo.png" alt="شعار مسار"><span class="navbar-title">MASAR | مسار</span></a>
+            <ul class="navbar-menu">
+                <li class="navbar-item"><a class="navbar-link" href="index.html">الرئيسية</a></li>
+                <li class="navbar-item"><a class="navbar-link" href="fields.html">المجالات</a></li>
+                <li class="navbar-item"><a class="navbar-link" href="courses.html">الدورات</a></li>
+                <li class="navbar-item"><a class="navbar-link" href="bootcamps.html">المعسكرات</a></li>
+                <li class="navbar-item"><a class="navbar-link" href="discover.html" aria-current="page">اكتشف مسارك</a></li>
+            </ul>
+            <button class="navbar-theme-toggle" type="button" aria-label="تفعيل الوضع الداكن"><i class="bi bi-moon" aria-hidden="true"></i></button>
+            <button class="navbar-menu-toggle" type="button" aria-label="فتح قائمة التنقل" aria-expanded="false"><i class="bi bi-list" aria-hidden="true"></i></button>
+            <div class="navbar-start-actions">
+                <a class="navbar-cta" href="#" role="button" aria-expanded="false" aria-controls="quick-start-menu">ابدأ الآن</a>
+                <div class="quick-start-menu" id="quick-start-menu" hidden>
+                    <h2>وش حاب تبدأ فيه؟</h2>
+                    <a href="courses.html"><i class="bi bi-book"></i><span><strong>استكشف الدورات</strong><small>تصفح الدورات حسب المجال</small></span></a>
+                    <a href="bootcamps.html"><i class="bi bi-rocket"></i><span><strong>استكشف المعسكرات</strong><small>اكتشف برامج تدريبية مكثفة</small></span></a>
+                    <a href="discover.html"><i class="bi bi-compass"></i><span><strong>اكتشف مسارك</strong><small>جاوب على 10 أسئلة واعرف المجال الأقرب لك</small></span></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="discover-page">
+        <section class="discover-shell" aria-labelledby="discover-title">
+            <div class="discover-intro">
+                <p class="discover-badge"><i class="bi bi-compass"></i> تجربة قصيرة لاكتشاف اهتماماتك</p>
+                <h1 id="discover-title">اكتشف مسارك</h1>
+                <p>10 أسئلة بسيطة تساعدك تتعرّف على المجال الأقرب لاهتماماتك.</p>
+            </div>
+
+            <div class="discover-quiz" id="discover-quiz">
+                <div class="discover-progress-header"><span id="discover-progress-label">السؤال 1 من 10</span><span>مسار التعلّم</span></div>
+                <div class="discover-progress-track"><span id="discover-progress-bar"></span></div>
+
+                <div class="discover-questions">
+                    <section class="discover-question active" data-question="0">
+                        <p class="discover-question-number">01</p><h2>عند مواجهة مشكلة جديدة، ما أول شيء تميل إلى فعله؟</h2>
+                        <div class="discover-answers">
+                            <button class="discover-answer" type="button" data-scores='{"web":2,"mobile":1}'><i class="bi bi-tools"></i><span>أبني حلًا سريعًا وأختبره</span></button>
+                            <button class="discover-answer" type="button" data-scores='{"data":2,"ai":1}'><i class="bi bi-search"></i><span>أجمع المعلومات وأحللها</span></button>
+                            <button class="discover-answer" type="button" data-scores='{"cyber":2,"data":1}'><i class="bi bi-shield-check"></i><span>أبحث عن نقاط الضعف والمشكلات</span></button>
+                            <button class="discover-answer" type="button" data-scores='{"uiux":2,"mobile":1}'><i class="bi bi-person-heart"></i><span>أفكر في تجربة المستخدم</span></button>
+                        </div>
+                    </section>
+                    <section class="discover-question" data-question="1">
+                        <p class="discover-question-number">02</p><h2>أي نوع من المشاريع يبدو أكثر إثارة للاهتمام؟</h2>
+                        <div class="discover-answers">
+                            <button class="discover-answer" type="button" data-scores='{"web":2,"uiux":1}'><i class="bi bi-window"></i><span>بناء موقع تفاعلي</span></button>
+                            <button class="discover-answer" type="button" data-scores='{"ai":2,"data":1}'><i class="bi bi-cpu"></i><span>إنشاء نظام ذكي</span></button>
+                            <button class="discover-answer" type="button" data-scores='{"cyber":2,"web":1}'><i class="bi bi-incognito"></i><span>التحقيق في مشكلة أمنية</span></button>
+                            <button class="discover-answer" type="button" data-scores='{"uiux":2,"mobile":1}'><i class="bi bi-palette"></i><span>تصميم تجربة رقمية</span></button>
+                        </div>
+                    </section>
+                    <section class="discover-question" data-question="2">
+                        <p class="discover-question-number">03</p><h2>ما نوع التفاصيل التي تلفت الانتباه أكثر؟</h2>
+                        <div class="discover-answers">
+                            <button class="discover-answer" type="button" data-scores='{"web":2,"mobile":1}'><i class="bi bi-gear"></i><span>كيف تعمل الأشياء تقنيًا</span></button>
+                            <button class="discover-answer" type="button" data-scores='{"data":2,"ai":1}'><i class="bi bi-graph-up"></i><span>الأنماط في الأرقام والبيانات</span></button>
+                            <button class="discover-answer" type="button" data-scores='{"uiux":2,"web":1}'><i class="bi bi-eye"></i><span>التفاصيل البصرية وسهولة الاستخدام</span></button>
+                            <button class="discover-answer" type="button" data-scores='{"cyber":2,"ai":1}'><i class="bi bi-exclamation-diamond"></i><span>السلوك غير المعتاد والثغرات</span></button>
+                        </div>
+                    </section>
+                    <section class="discover-question" data-question="3">
+                        <p class="discover-question-number">04</p><h2>إذا كانت هناك مجموعة كبيرة من المعلومات، ما المهمة الأكثر جاذبية؟</h2>
+                        <div class="discover-answers">
+                            <button class="discover-answer" type="button" data-scores='{"data":2,"ai":1}'><i class="bi bi-table"></i><span>تنظيم البيانات وتحليلها</span></button>
+                            <button class="discover-answer" type="button" data-scores='{"ai":2,"data":1}'><i class="bi bi-lightbulb"></i><span>إنشاء تنبؤ ذكي</span></button>
+                            <button class="discover-answer" type="button" data-scores='{"uiux":2,"web":1}'><i class="bi bi-layout-text-window"></i><span>عرضها من خلال واجهة واضحة</span></button>
+                            <button class="discover-answer" type="button" data-scores='{"web":2,"mobile":1}'><i class="bi bi-diagram-3"></i><span>بناء نظام يعالج المعلومات</span></button>
+                        </div>
+                    </section>
+                    <section class="discover-question" data-question="4">
+                        <p class="discover-question-number">05</p><h2>عند استخدام تطبيق جديد، ما الجانب الذي يثير الفضول أكثر؟</h2>
+                        <div class="discover-answers">
+                            <button class="discover-answer" type="button" data-scores='{"uiux":2,"data":1}'><i class="bi bi-magic"></i><span>كيف صُممت الواجهة</span></button>
+                            <button class="discover-answer" type="button" data-scores='{"web":2,"mobile":1}'><i class="bi bi-code"></i><span>كيف تمت برمجة التطبيق</span></button>
+                            <button class="discover-answer" type="button" data-scores='{"cyber":2,"web":1}'><i class="bi bi-lock"></i><span>كيف تُحمى معلومات المستخدم</span></button>
+                            <button class="discover-answer" type="button" data-scores='{"mobile":2,"uiux":1}'><i class="bi bi-phone"></i><span>كيف تعمل التجربة على الجوال</span></button>
+                        </div>
+                    </section>
+                    <section class="discover-question" data-question="5">
+                        <p class="discover-question-number">06</p><h2>أي إنجاز يعطي شعورًا أكبر بالرضا؟</h2>
+                        <div class="discover-answers">
+                            <button class="discover-answer" type="button" data-scores='{"web":2,"uiux":1}'><i class="bi bi-browser-chrome"></i><span>رؤية موقع يعمل أمامك</span></button>
+                            <button class="discover-answer" type="button" data-scores='{"cyber":2,"data":1}'><i class="bi bi-bug"></i><span>اكتشاف مشكلة أمنية مخفية</span></button>
+                            <button class="discover-answer" type="button" data-scores='{"data":2,"ai":1}'><i class="bi bi-bar-chart-line"></i><span>العثور على نمط مهم في البيانات</span></button>
+                            <button class="discover-answer" type="button" data-scores='{"mobile":2,"web":1}'><i class="bi bi-app"></i><span>تحويل فكرة إلى تطبيق جوال مفيد</span></button>
+                        </div>
+                    </section>
+                    <section class="discover-question" data-question="6">
+                        <p class="discover-question-number">07</p><h2>أي بيئة عمل تبدو أكثر متعة؟</h2>
+                        <div class="discover-answers">
+                            <button class="discover-answer" type="button" data-scores='{"web":2,"mobile":1}'><i class="bi bi-terminal"></i><span>مساحة لبناء حلول وتجربتها</span></button>
+                            <button class="discover-answer" type="button" data-scores='{"ai":2,"data":1}'><i class="bi bi-beaker"></i><span>مختبر للتجربة واكتشاف الجديد</span></button>
+                            <button class="discover-answer" type="button" data-scores='{"cyber":2,"web":1}'><i class="bi bi-radar"></i><span>غرفة تحقيق ومراقبة</span></button>
+                            <button class="discover-answer" type="button" data-scores='{"uiux":2,"data":1}'><i class="bi bi-people"></i><span>فريق يفهم الناس ويصمم لهم</span></button>
+                        </div>
+                    </section>
+                    <section class="discover-question" data-question="7">
+                        <p class="discover-question-number">08</p><h2>لو كان لديك مشروع شخصي لمدة أسبوع، ماذا تفضل أن تكون نتيجته؟</h2>
+                        <div class="discover-answers">
+                            <button class="discover-answer" type="button" data-scores='{"web":2,"uiux":1}'><i class="bi bi-window-stack"></i><span>موقع تفاعلي</span></button>
+                            <button class="discover-answer" type="button" data-scores='{"ai":2,"mobile":1}'><i class="bi bi-robot"></i><span>مساعد ذكي</span></button>
+                            <button class="discover-answer" type="button" data-scores='{"data":2,"ai":1}'><i class="bi bi-pie-chart"></i><span>لوحة بيانات</span></button>
+                            <button class="discover-answer" type="button" data-scores='{"mobile":2,"web":1}'><i class="bi bi-phone-landscape"></i><span>تطبيق جوال</span></button>
+                        </div>
+                    </section>
+                    <section class="discover-question" data-question="8">
+                        <p class="discover-question-number">09</p><h2>أي مهارة يبدو تعلمها أكثر إثارة؟</h2>
+                        <div class="discover-answers">
+                            <button class="discover-answer" type="button" data-scores='{"web":2,"uiux":1}'><i class="bi bi-braces"></i><span>بناء الواجهات والأنظمة</span></button>
+                            <button class="discover-answer" type="button" data-scores='{"ai":2,"data":1}'><i class="bi bi-graph-up-arrow"></i><span>تدريب النماذج الذكية</span></button>
+                            <button class="discover-answer" type="button" data-scores='{"cyber":2,"web":1}'><i class="bi bi-shield-lock"></i><span>حماية الأنظمة</span></button>
+                            <button class="discover-answer" type="button" data-scores='{"uiux":1,"data":2}'><i class="bi bi-person-lines-fill"></i><span>فهم المستخدمين والبيانات</span></button>
+                        </div>
+                    </section>
+                    <section class="discover-question" data-question="9">
+                        <p class="discover-question-number">10</p><h2>أي وصف أقرب لطريقة التفكير؟</h2>
+                        <div class="discover-answers">
+                            <button class="discover-answer" type="button" data-scores='{"uiux":2,"mobile":1}'><i class="bi bi-brush"></i><span>إبداعي وبصري</span></button>
+                            <button class="discover-answer" type="button" data-scores='{"data":2,"ai":1}'><i class="bi bi-calculator"></i><span>تحليلي ويهتم بالأرقام</span></button>
+                            <button class="discover-answer" type="button" data-scores='{"web":2,"mobile":1}'><i class="bi bi-diagram-2"></i><span>منطقي ويحب البناء</span></button>
+                            <button class="discover-answer" type="button" data-scores='{"cyber":2,"data":1}'><i class="bi bi-fingerprint"></i><span>استقصائي ودقيق في التفاصيل</span></button>
+                        </div>
+                    </section>
+                </div>
+
+                <p class="discover-message" id="discover-message" role="status"></p>
+                <div class="discover-actions"><button class="discover-previous" id="discover-previous" type="button">السابق</button><button class="discover-next" id="discover-next" type="button">التالي</button></div>
+            </div>
+
+            <section class="discover-result" id="discover-result" hidden>
+                <p class="discover-result-label">مسارك المقترح</p>
+                <div class="discover-result-icon" id="discover-result-icon"><i class="bi bi-compass"></i></div>
+                <h2 id="discover-result-title"></h2>
+                <p id="discover-result-description"></p>
+                <div class="discover-result-actions"><a id="discover-courses-link" href="courses.html?category=web">استكشف دورات هذا المجال</a><a id="discover-bootcamps-link" href="bootcamps.html?category=web">استكشف معسكرات هذا المجال</a></div>
+                <button class="discover-restart" id="discover-restart" type="button">إعادة الاختبار</button>
+            </section>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <section class="footer-cta"><div class="footer-cta-content"><h2 class="footer-cta-title">ابدأ رحلتك مع مسار</h2><p class="footer-cta-description">اكتشف المجال المناسب لك وابدأ في استكشاف الفرص التعليمية من مكان واحد.</p></div><a class="footer-cta-button" href="discover.html">اكتشف مسارك <i class="bi bi-arrow-left"></i></a></section>
+        <div class="footer-main">
+            <div class="footer-brand"><a class="footer-logo" href="index.html"><img src="images/logo.png" alt="شعار مسار"><span>مسار</span></a><p>منصة تساعدك تكتشف الدورات والمعسكرات والفرص التعليمية المناسبة لمجالك واهتماماتك.</p></div>
+            <nav class="footer-links" aria-label="روابط سريعة"><h2>روابط سريعة</h2><a href="index.html">الرئيسية</a><a href="fields.html">المجالات</a><a href="courses.html">الدورات</a><a href="bootcamps.html">المعسكرات</a><a href="discover.html">اكتشف مسارك</a><a href="#faq">الأسئلة الشائعة</a></nav>
+            <div class="footer-social"><h2>تابعنا</h2><div class="footer-social-links"><a href="#" aria-label="إكس"><i class="bi bi-twitter-x"></i></a><a href="#" aria-label="إنستغرام"><i class="bi bi-instagram"></i></a><a href="#" aria-label="لينكدإن"><i class="bi bi-linkedin"></i></a></div></div>
+        </div>
+        <div class="footer-bottom"><p>© 2026 مسار. جميع الحقوق محفوظة.</p><span>صُمم لتسهيل الوصول للفرص التعليمية.</span></div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
